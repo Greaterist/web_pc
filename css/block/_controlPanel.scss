@@ -1,0 +1,63 @@
+footer{
+    position: absolute;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: $themeColor;
+    & .items{
+        color: $fontColor;
+        fill: $fontColor;
+        display: flex;
+        height: 100%;
+
+        & .menu{
+            
+            width: 50px;
+            & svg{
+                padding: 5px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    
+        & .apps{
+            width: 100%;
+        }
+    
+        & .utils{
+            width: 300px;
+            height: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 0 20px;
+            & .item{
+                height: 100%;
+                width: 20px;
+                padding: 0 19px;
+                & svg{
+                    width: 22px;
+                    height: 22px;
+                    margin: 12px 0 0 0;
+                }
+            }
+            
+        }
+    
+        & .datetime{
+            text-align: center;
+            width: 70px;
+            padding: 0 10px 0 0;
+            
+            & .date{
+                font-size: 12px;
+                height: 50%;
+            }
+
+            & .time{
+                line-height: 1.8;
+                height: 50%;
+            }
+        }
+    }
+    
+}

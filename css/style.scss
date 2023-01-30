@@ -1,0 +1,12 @@
+body{
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+}
+
+.debug{
+    border: 3px solid red;
+}
+
+@import "./block/_desktop.scss";
+@import "./block/controlPanel.scss";

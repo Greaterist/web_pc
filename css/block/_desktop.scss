@@ -1,0 +1,30 @@
+.desktop {
+    background-image: url("../src/img/desktop/wallpaper001.png");
+    background-size: 1920px 1080px;
+    
+    & main {
+        display: flex;
+        flex-direction: column;
+        & .icon{
+            width: 130px;
+            height: 130px;
+            padding: 15px;
+            & img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 70px;
+                height: 70px;
+                object-fit: contain;
+            }
+            &__label{
+                font-size: 16px;
+                font-style: italic;
+                text-align: center;
+                color: $fontColor;
+                text-shadow: 1px 1px 2px black;
+                bottom: 0;
+            }
+        }
+    }
+}
