@@ -8,5 +8,8 @@ body{
     border: 3px solid red;
 }
 
+@import "./module/vars";
+
 @import "./block/_desktop.scss";
 @import "./block/controlPanel.scss";
+@import "./block/window.scss";
