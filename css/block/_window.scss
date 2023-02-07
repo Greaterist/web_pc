@@ -1,27 +1,59 @@
 .windowFrame{
+    display: flex;
+    flex-direction: column;
     width: 1920px;
     height: 1080px;
-    background-color: bisque;
+    background-color: $color5;
+    box-shadow: 5px 5px 15px rgba($color: #000000, $alpha: 0.3);
+    outline: 2px solid $color1;
     & .control{
-        height: 30px;
+        height: 35px;
         width: 100%;
-        background-color: $themeColor;
+        background-color: $color1;
         display: flex;
         flex-direction: row-reverse;
         & div{
-            width: 30px;
-            height: 30px;
+            width: 35px;
+            height: 35px;
             text-align: center;
             & svg{
-                margin-top: 2.5px;
+                margin: 15%;
                 fill: white;
-                width: 20px;
-                height: 20px;  
+                width: 70%;
+                height: 70%;  
             }
             &:hover{
                 background-color: red;
             }
         }
+    }
+    & .navigation{
+        margin: 5px 0;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        & div{
+            width: 50px;
+            height: 50px;
+            &:hover{
+                border-radius: 15%;
+                background-color: rgba($color: #000000, $alpha: 0.3);
+                
+            }
+            & svg{
+                margin: 5px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    & .browserFrame{
+        overflow-y:auto;
+        width:auto;
+        height:auto;
+        outline: 1px solid black;
+        margin: 10px 3px;
+        flex:1;
     }
 }
 
